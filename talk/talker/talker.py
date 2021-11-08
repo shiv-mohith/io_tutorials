@@ -3,7 +3,7 @@
 import rospy
 from std_msgs.msg import String
 
-from talk.talker.config import HELLO_STR
+from config import HELLO_STR
 
 
 def talker():
