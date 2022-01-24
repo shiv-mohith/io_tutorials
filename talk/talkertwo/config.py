@@ -1,1 +1,1 @@
-HELLO_STR  = 'hello_world'
+HELLO_STR  = 'hello_world_two'
