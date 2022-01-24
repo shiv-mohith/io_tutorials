@@ -1,0 +1,1 @@
+HELLO_STR  = 'hello_world'

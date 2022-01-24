@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>talkertwo</name>
+  <version>0.0.0</version>
+  <description>The talkertwo package</description>
+
+  <maintainer email="senapati@todo.todo">senapati</maintainer>
+
+  <license>Commercial</license>
+
+
+  <depend>rospy</depend>
+  <depend>std_msgs</depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>
