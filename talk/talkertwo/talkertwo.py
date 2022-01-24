@@ -8,7 +8,7 @@ from config import HELLO_STR
 
 def talker():
 	pub = rospy.Publisher('telemetry2', String, queue_size=10)
-	rospy.init_node('talker', anonymous=True)
+	rospy.init_node('talkertwo', anonymous=True)
 	rate = rospy.Rate(10)
 	while not rospy.is_shutdown():
 		hello_str = "%s %s" % (HELLO_STR, rospy.get_time())

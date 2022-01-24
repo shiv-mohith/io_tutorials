@@ -10,7 +10,7 @@ def callback(data):
 
 def listener():
 	topicname=os.getenv('topic_name','telemetry2')
-	rospy.init_node('listener', anonymous=True)
+	rospy.init_node('listenertwo', anonymous=True)
 	rospy.Subscriber(topicname, String, callback)
 
 	rospy.spin()
