@@ -9,8 +9,8 @@ def talker():
 	rospy.init_node('talker', anonymous=True)
 	rate = rospy.Rate(10)
 	while not rospy.is_shutdown():
-		from config import HELLO_STR
-		hello_str = "%s %s" % (HELLO_STR, rospy.get_time())
+		f = open('/opt/catkin_ws/src/talk/talker/config.txt', 'r')
+		hello_str = "%s %s" % (f.read(), rospy.get_time())
 		rospy.loginfo(hello_str)
 		pub.publish(hello_str)
 		rate.sleep()
